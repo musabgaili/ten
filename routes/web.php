@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // User::factory()->create();
+    User::create([
+        'name'=> 'x',
+        'email'=> '1@n.co',
+        "passwrod"=> '123456'
+    ]);
     return view('welcome');
 });
 
