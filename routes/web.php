@@ -20,6 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// s
 
 
 Route::domain('{name}.example.com')->group(function () {
