@@ -20,7 +20,7 @@ Route::get('/', function () {
     User::create([
         'name'=> 'x',
         'email'=> '1@n.co',
-        "passwrod"=> '123456'
+        "password"=> '123456'
     ]);
     return view('welcome');
 });
