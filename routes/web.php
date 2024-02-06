@@ -17,17 +17,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // User::factory()->create();
-    User::create([
-        'name'=> 'x',
-        'email'=> '1@n.co',
-        "password"=> '123456'
-    ]);
+    // User::create([
+    //     'name'=> 'x',
+    //     'email'=> '1@n.co',
+    //     "password"=> '123456'
+    // ]);
     return view('welcome');
 });
 
 // s
 
 
-Route::domain('{name}.example.com')->group(function () {
+Route::domain('{name}.musab.link')->group(function () {
     Route::get('users', [UserController::class ,'index']);
 });
