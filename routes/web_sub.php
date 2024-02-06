@@ -27,7 +27,7 @@ Route::get('/', function () {
 
 // s
 
-Route::get('/', function () {
+Route::get('/{domain}', function ($domain) {
     return 'OOK';
 });
 
